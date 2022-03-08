@@ -1,0 +1,20 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "cms style tech blog",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hfranz1/Tech-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hfranz1/Tech-blog/issues"
+  },
+  "homepage": "https://github.com/Hfranz1/Tech-blog#readme"
+}
