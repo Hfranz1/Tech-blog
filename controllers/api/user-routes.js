@@ -114,7 +114,7 @@ router.post('/logout', withAuth, (req, res) => {
 });
 
 
-router.put('/:id', withAuth, (req, res => {
+router.put('/:id', withAuth, (req, res) => {
     User.update(req.body, {
         individualHooks: true,
         where: {
@@ -132,7 +132,7 @@ router.put('/:id', withAuth, (req, res => {
             console.log(err);
             res.status(500).json(err);
         });
-}));
+});
 
 
 router.delete('/:id', withAuth, (req, res) => {
