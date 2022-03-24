@@ -5,14 +5,14 @@ const Comment = require('./Comment');
 
 
 User.hasMany(Post, {
-    foreignKey: 'user_id'
+    foreignKey: 'user_id',
 });
 
 Post.belongsTo(User, {
     foreignKey: 'user_id'
 });
 
-User.belongsTo(Post, {
+User.belongsToMany(Post, {
     through: Vote,
     as: 'vote_posts',
     foreignKey: 'user_id'
